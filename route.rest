@@ -1,0 +1,29 @@
+GET http://localhost:3000/users/getall
+
+###
+POST  http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+    "full_name" : "aashishChaple jr.",
+    "email" : "chaple4.a@northeastern.edu",
+    "password" : "Aashish@123"
+}
+
+###
+PUT  http://localhost:3000/users/edit
+Content-Type: application/json
+
+{
+    "full_name" : "Akash S C",
+    "email" : "chaple.a@northeastern.edu",
+    "password" : "Aashish@123"
+}
+
+###
+DELETE  http://localhost:3000/users/delete
+Content-Type: application/json
+
+{
+    "email" : "chaple.a@northeastern.edu"
+}
